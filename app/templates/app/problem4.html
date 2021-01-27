@@ -1,0 +1,64 @@
+{% extends "./home.html" %}
+{% block content %}
+<div class="my-1">
+  <p class="h3 text-muted text-center"></p>
+  <form id="formElm" onsubmit="solution4(event)">
+    <div class="row g-3 align-items-center">      
+      <div class="d-inline-flex col-sm-4">
+        <label class="me-2" for="start">Start Year: </label>
+        <select class="form-select form-select-sm"  name="start" id="start">
+          <option selected value="2008">2008</option>
+          <option value=2009>2009</option>
+          <option value=2010>2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+        </select>
+      </div>
+      <div class="d-inline-flex col-sm-4">
+        <label class="me-2" for="end">End Year: </label>
+        <select class="form-select form-select-sm"  name="end" id="end">
+          <option selected value="2008">2008</option>
+          <option value=2009>2009</option>
+          <option value=2010>2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+        </select>
+      </div>
+
+      <div class="d-inline-flex col-sm-6">
+        <label class="me-2" for="teams">Teams: </label>
+        <select class="form-select" size="4" multiple name="teams" id="teams">
+          <option selected value="mi">Mumbai Indians</option>
+          <option selected value="rcb">Royal Challengers Bangalore</option>
+          <option value="kxip">Kings XI Punjab</option>
+          <option value="kkr">Kolkata Knight Riders</option>
+          <option value="dd">Delhi Daredevils</option>
+          <option value="csk">Chennai Super Kings</option>
+          <option value="rr">Rajasthan Royals</option>
+          <option value="srh">Sunrisers Hyderabad</option>
+          <option value="pw">Pune Warriors</option>
+          <option value="gl">Gujarat Lions</option>
+          <option value="rps">Rising Pune Supergiants</option>
+          <option value="ktk">Kochi Tuskers Kerala</option>
+        </select>
+      </div>
+      
+      <div class="col-sm-2">
+        <input class="btn btn-secondary btn-sm" type="submit" value="Submit" id="problem4">
+      </div>
+      
+    </div>
+  </form>
+</div>
+<div id="output"></div>
+{% endblock content %}

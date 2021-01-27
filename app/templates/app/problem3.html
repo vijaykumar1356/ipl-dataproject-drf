@@ -1,0 +1,30 @@
+{% extends "./home.html" %}
+{% block content %}
+<div class="my-1">
+  <p class="h3 text-muted text-center">Top Batsmen by Team by Year</p>
+  <form id="formElm" onsubmit="solution3(event)">
+    <div class="row g-3 align-items-center">      
+      <div class="d-flex col-sm-6">
+        <label class="me-2" for="teams">Country: </label>
+        <select class="form-select" multiple name="countries" id="country">
+          <option selected value="ind">India</option>
+          <option selected value="aus">Australia</option>
+          <option value="sa">South Africa</option>
+          <option value="eng">England</option>
+          <option value="nz">New Zealand</option>
+          <option value="sl">Sri Lanka</option>
+          <option value="pak">Pakistan</option>
+          <option value="wi">West Indies</option>
+          <option value="zim">Zimbabwe</option>
+        </select>
+      </div>
+      
+      <div class="col-sm-2">
+        <input class="btn btn-secondary btn-sm" type="submit" value="Submit" id="problem3">
+      </div>
+      
+    </div>
+  </form>
+</div>
+<div id="output"></div>
+{% endblock content %}
